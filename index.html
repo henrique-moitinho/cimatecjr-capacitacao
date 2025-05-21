@@ -59,3 +59,31 @@
       </ul>
     </nav>
   </header>
+  <section class="carousel">
+    <div class="slides" id="slides">
+      <div class="slide"><img src="https://i.imgur.com/5X2wEVx.png" alt="Bem-vindo à Vinyl&Sound"></div>
+      <div class="slide"><img src="https://i.imgur.com/Gl7Ym7r.png" alt="Clássicos e Novidades"></div>
+      <div class="slide"><img src="https://i.imgur.com/nsRR3o5.png" alt="Cultura do Vinil"></div>
+    </div>
+  </section>
+
+  <style>
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      max-width: 100%;
+    }
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+    .slide {
+      min-width: 100%;
+    }
+    .slide img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .arrow { display: none; }
+  </style>
