@@ -125,3 +125,47 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.1);
     }
   </style>
+  <section class="section" id="catalogo">
+    <h2>Nossos produtos</h2>
+    <div class="catalogo">
+      <!-- Os 4 produtos aqui -->
+    </div>
+  </section>
+
+  <style>
+    .catalogo {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+      padding: 2rem;
+    }
+    .produto {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 1.5rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+    .produto:hover {
+      transform: translateY(-5px);
+    }
+    .produto img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 1rem;
+      border-radius: 8px;
+    }
+    .produto p.preco {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #000;
+      margin-top: 0.5rem;
+    }
+
+    @media (min-width: 768px) {
+      .catalogo {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
