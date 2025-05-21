@@ -131,7 +131,6 @@
       <!-- Os 4 produtos aqui -->
     </div>
   </section>
-
   <style>
     .catalogo {
       display: grid;
@@ -167,5 +166,60 @@
       .catalogo {
         grid-template-columns: repeat(3, 1fr);
       }
+    }
+  </style>
+  <section class="avaliacoes" id="avaliacoes">
+    <h2>O que nossos clientes dizem</h2>
+    <div class="feedback">...</div>
+    <div class="feedback">...</div>
+    <div class="feedback">...</div>
+  </section>
+
+  <footer id="contato">
+    <p>&copy; 2025 Vinyl&Sound - Todos os direitos reservados.</p>
+    <p>Telefone: (71) 98109-5957</p>
+    <p>E-mail: contato@vinylsound.com.br</p>
+  </footer>
+
+  <style>
+    .avaliacoes {
+      padding: 2rem;
+      background-color: #e9e4d4;
+      margin-top: 60px;
+    }
+    .feedback {
+      background-color: #f9f9fb;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      margin-bottom: 1rem;
+    }
+    .nota {
+      color: #ffc107;
+      margin-bottom: 0.5rem;  <script>
+    let currentIndex = 0;
+    const slides = document.getElementById("slides");
+    const totalSlides = slides.children.length;
+
+    function updateSlide() {
+      slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % totalSlides;
+      updateSlide();
+    }, 4000);
+  </script>
+</body>
+</html>
+    }
+    footer {
+      background-color: #111;
+      color: #fff;
+      text-align: center;
+      padding: 2rem 1.5rem;
+      margin-top: 60px;
+    }
+    footer p {
+      margin: 0.3rem 0;
     }
   </style>
